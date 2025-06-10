@@ -4,12 +4,12 @@ def analyze_string(s):
     vowel_chars = ''
     consonant_chars = ''
     
-    for char in s:
-        if char.isalpha():
-            if char in vowels:
-                vowel_chars += char
+    for d in s:
+        if d.isalpha():
+            if d in vowels:
+                vowel_chars += d
             else:
-                consonant_chars += char
+                consonant_chars += d
                 
     return (vowel_chars, len(vowel_chars), consonant_chars)
 a = input("Enter a string: ")
